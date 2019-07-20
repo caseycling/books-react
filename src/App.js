@@ -1,18 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from './components/Jumbotron';
 import Navbar from './components/Navbar';
-import Search from './components/Search';
-import ResultContainer from './components/ResultsContainer';
-
+import Searchpg from '../src/pages/Search';
+import Savedpg from '../src/pages/Saved';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Jumbotron />
-      <Search />
-      <ResultContainer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Jumbotron />
+        <Switch>
+          <Route exact path="/" component={Searchpg} />
+          <Route exact path="/saved" component={Savedpg} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

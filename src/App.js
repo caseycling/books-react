@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from './components/Jumbotron';
 import Navbar from './components/Navbar';
-import Searchpg from '../src/pages/Search';
-import Savedpg from '../src/pages/Saved';
+import Searchpg from './pages/Search';
+import Savedpg from './pages/Saved';
 
 function App() {
   return (
@@ -21,3 +21,6 @@ function App() {
 }
 
 export default App;
+
+
+

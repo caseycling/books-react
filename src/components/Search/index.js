@@ -4,8 +4,8 @@ function Search() {
     return (
         <div className="container-fluid">
             <h3>Enter a book here</h3>
-            <div class="md-form mt-0">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+            <div className="md-form mt-0">
+                <input className="form-control" type="text" placeholder="Search" aria-label="Search" />
             </div>
         </div>
     )
